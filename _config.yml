@@ -5,7 +5,7 @@
 # Link to a page that gives an overview of all your projects.
 # This can be an external link (e.g., to you GitHub profile) or to another
 # page within your website.
-projects_url: http://github.com/probberechts
+projects_url: https://github.com/iwill
 
 # Set the page direction to RTL or LTR. default is LTR. (if you set it 'rtl', the 'vazir' font will be loaded.)
 direction: ltr
@@ -17,7 +17,9 @@ nav:
   home: /
   about: /about/
   articles: /archives/
-  projects: http://github.com/probberechts
+  projects: https://github.com/iwill
+  # tag: /tags/
+  # category: /categories/
 
 
 # Links to your social media accounts.
@@ -25,15 +27,15 @@ nav:
 # (see https://fontawesome.com/icons?d=gallery&s=brands);
 # only 'mail' is an exception.
 social_links:
-  github: http://github.com/probberechts/cactus-dark
-  twitter: /
-  facebook: /
-  linkedin: /
-  mail: mailto:name@email.com
+  github: https://github.com/iwill
+  twitter: https://twitter.com/minglq
+  # facebook: /
+  # linkedin: /
+  mail: mailto:minglq.9@gmail.com
 
 # Customize the overview with displaying a tagcloud on the index page.
 # Options: https://hexo.io/docs/helpers.html#tagcloud
-tags_overview: false
+tags_overview: true
 
 # Customize the overview with the most recent blog posts on the index page.
 # Options:
@@ -41,8 +43,8 @@ tags_overview: false
 #   - post_count: whether to show only the x most recent posts.
 #   - sort_updated: sort posts by last modification date instead of creation date.
 posts_overview:
-  show_all_posts: false
-  post_count: 5
+  show_all_posts: true
+  # post_count: 5
   sort_updated: false
 
 # Customize the archive view.
@@ -57,12 +59,12 @@ archive:
 # Options:
 #   - show_updated: show the last modification date.
 post:
-  show_updated: false
+  show_updated: true
 
 # Customize the copyright years
 # Note: if start_year/end_year not provided, will use current year.
 copyright:
-  start_year: 2016
+  start_year: 2014
   end_year:
 
 ##############################################################################
@@ -82,8 +84,8 @@ logo:
   width: 50
   height: 50
   url: /images/logo.png
-  gravatar: false
-  grayout: true
+  gravatar: true
+  grayout: false
 
 # Customize the favicons.
 # Cactus supports a limited set of the three most important icons:
@@ -96,18 +98,40 @@ logo:
 #   - gravatar: whether to create a favicon from your Gravatar
 favicon:
   desktop:
-    url: /images/favicon.ico
-    gravatar: false
+    # url: /images/favicon.ico
+    gravatar: true
   android:
-    url: /images/favicon-192x192.png
-    gravatar: false
+    # url: /images/favicon-192x192.png
+    gravatar: true
   apple:
-    url: /images/apple-touch-icon.png
-    gravatar: false
+    # url: /images/apple-touch-icon.png
+    gravatar: true
 
 # The color scheme that should be used to highlight codeblocks.
 # See source/css/_highlight for a list of all available color schemes.
-# highlight: rainbow
+## for `white`:
+# highlight: ascetic
+# highlight: color-brewer
+# highlight: foundation
+# highlight: github-gist
+# highlight: github
+# highlight: googlecode
+# highlight: grayscale
+# highlight: highlightjs
+# highlight: mono-blue
+# highlight: tomorrow
+# highlight: vs
+# highlight: xcode
+## for `dark`:
+# highlight: dark
+# highlight: ir-black
+highlight: obsidian
+# highlight: tomorrow-night-blue
+# highlight: tomorrow-night-bright
+# highlight: tomorrow-night-eighties
+# highlight: tomorrow-night
+## wtf:
+# highlight: index
 
 # Set the color scheme.
 # Available color schemes are 'dark', 'light', 'classic' and 'white'.
@@ -115,7 +139,8 @@ favicon:
 colorscheme: dark
 
 # Maximal width of the page in rem units.
-page_width: 48
+page_width: 54 # 800
+# page_width: 64 # 960
 
 
 ##############################################################################
@@ -123,7 +148,7 @@ page_width: 48
 ##############################################################################
 
 # Enable or disable the RSS feed.
-rss: false
+rss: true
 
 # Turn your web pages into graph objects (see http://ogp.me).
 open_graph:
@@ -143,8 +168,8 @@ mathjax:
   
 # Fill in your Disqus Comments Shortname to enable Disqus comments.
 disqus:
-  enabled: false
-  shortname: cactus-1
+  enabled: true
+  shortname: minglq
 
 # Fill in your Utterances data to enable Utterances comments
 utterances:
@@ -179,8 +204,8 @@ umami_analytics:
 # logo and/or favicons of you website.
 # To generate hash: `$ echo -n "name@email.com" | md5`.
 gravatar:
-  email: name@email.com
-  hash: d41d8cd98f00b204e9800998ecf8427e
+  email: minglq.9@gmail.com
+  hash: 02402cd5f51e73cc0b8fbfac07165612
 
 # loads libraries and styles from CDN instead or relying on local files
 cdn:
