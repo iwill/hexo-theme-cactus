@@ -37,7 +37,6 @@ html
   margin: 0
   padding: 0
   height: 100%
-  border-top: 2px solid $color-text
   -webkit-text-size-adjust: 100%
   -ms-text-size-adjust: 100%
 
@@ -153,8 +152,10 @@ pre
   overflow-x: auto
   padding: 10px 15px
   padding-bottom: 0
-  border: 1px dotted $color-border
+  border-style: none
   border-radius: 4px
+  background-color: rgba(255, 255, 255, 0.1)
+  color: white
   font-size: 13px
   font-family: $font-family-mono
   line-height: 22px
@@ -167,8 +168,10 @@ pre
 
 code
   padding: 0 5px
-  border: 1px dotted $color-border
+  border-style: none
   border-radius: 2px
+  background-color: rgba(255, 255, 255, 0.1)
+  color: white
   -webkit-border-radius: 2px
 
 .highlight

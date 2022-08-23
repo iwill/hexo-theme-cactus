@@ -1,10 +1,10 @@
 nav:
   home: Home
   about: About
-  articles: Writing
+  articles: Articles
   tag: Tag
   category: Category
-  projects: Projects
+  projects: GitHub
   search: Search
 
 icons:
@@ -18,8 +18,8 @@ index:
   find_me_on: Find me on
   enum_comma: ','
   enum_and: and
-  articles: Writing
-  projects: Projects
+  articles: Articles
+  projects: GitHub
   topics: Topics
   most_recent: Most recent
 

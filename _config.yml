@@ -28,10 +28,10 @@ nav:
 # only 'mail' is an exception.
 social_links:
   github: https://github.com/iwill
+  stack-overflow: https://stackoverflow.com/users/456536/mr-m%c3%adng
   twitter: https://twitter.com/minglq
-  # facebook: /
-  # linkedin: /
-  mail: mailto:minglq.9@gmail.com
+  rss: /atom.xml
+  mail: mailto:i@iwill.im
 
 # Customize the overview with displaying a tagcloud on the index page.
 # Options: https://hexo.io/docs/helpers.html#tagcloud
@@ -204,8 +204,8 @@ umami_analytics:
 # logo and/or favicons of you website.
 # To generate hash: `$ echo -n "name@email.com" | md5`.
 gravatar:
-  email: minglq.9@gmail.com
-  hash: 02402cd5f51e73cc0b8fbfac07165612
+  email: i@iwill.im
+  hash: 3a4f1a96eb6465c120fd7ae64accb342
 
 # loads libraries and styles from CDN instead or relying on local files
 cdn:
