@@ -25,6 +25,7 @@ $(document).ready(function() {
    * for Desktop, tablet and mobile.
    */
   if ($(".post").length) {
+
     var menu = $("#menu");
     var nav = $("#menu > #nav");
     var menuIcon = $("#menu-icon, #menu-icon-tablet");
@@ -107,6 +108,49 @@ $(document).ready(function() {
         } else if (topDistance > 100) {
           $("#actions-footer > #top").show();
         }
+      });
+    }
+    
+    if (/\/about\b/.test(location.pathname)) {
+      
+      function evenOdd(s) {
+          return s.replace(/./g, (c) => {
+              let d = c.charCodeAt(0);
+              if (d < 32 || d == 64 || d >= 127) return c;
+              return String.fromCharCode(d + (d % 2 || -1) * (d > 64 || -1));
+          });
+      }
+      
+      let displayTimeout = 0;
+      const display = function(text) {
+        copy_m.setAttribute("data-content", ` // ${text}`.split("").reverse().join(""));
+        displayTimeout = setTimeout(function() {
+          copy_m.setAttribute("data-content", "");
+        }, 5000);
+      };
+      
+      $(copy_m)
+      .click(function() {
+        clearTimeout(displayTimeout);
+        
+        let text = this.getAttribute("data-m");
+        let mask = evenOdd(text).replaceAll("+", "#");
+        let ori = this.innerHTML;
+        this.innerHTML = mask;
+        let copy = this.innerText;
+        this.innerHTML = ori;
+        
+        navigator.clipboard.writeText(copy).then(
+          () => display("copied"),
+          () => display("failed to copy")
+        );
+        
+        return false;
+      })
+      .bind("copy", function() {
+        clearTimeout(displayTimeout);
+        display(this.getAttribute("title"));
+        return false;
       });
     }
   }
