@@ -107,6 +107,15 @@ favicon:
     # url: /images/apple-touch-icon.png
     gravatar: true
 
+# Set the color scheme.
+# Available color schemes are 'dark', 'light', 'classic' and 'white'.
+# Alternatively, add your own custom color scheme to source/css/_colors.
+colorscheme: dark
+
+# Maximal width of the page in rem units.
+page_width: 54 # 800
+# page_width: 64 # 960
+
 # The color scheme that should be used to highlight codeblocks.
 # See source/css/_highlight for a list of all available color schemes.
 ## for `white`:
@@ -130,17 +139,6 @@ highlight: obsidian
 # highlight: tomorrow-night-bright
 # highlight: tomorrow-night-eighties
 # highlight: tomorrow-night
-## wtf:
-# highlight: index
-
-# Set the color scheme.
-# Available color schemes are 'dark', 'light', 'classic' and 'white'.
-# Alternatively, add your own custom color scheme to source/css/_colors.
-colorscheme: dark
-
-# Maximal width of the page in rem units.
-page_width: 54 # 800
-# page_width: 64 # 960
 
 
 ##############################################################################

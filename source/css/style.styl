@@ -177,12 +177,26 @@ code
 .highlight
   overflow-x: auto
   margin: 1rem 0
-  padding: 10px 15px
-  border-radius: 4px
+  padding: 10px
+  border-radius: 8px
   background: $color-background-code
   font-family: $font-family-mono
   // color: $color-accent-3
-  -webkit-border-radius: 4px
+  -webkit-border-radius: 8px
+  &:before
+    content: ' '
+    /// colors from a theme
+    // background: #fc625d
+    // box-shadow: 20px 0 #fdbc40, 40px 0 #35cd4b
+    /// colors from macOS 12.6
+    background: #EC6A5E
+    box-shadow: 20px 0 #F4BF4F, 40px 0 #61C554
+    border-radius: 50%
+    width: 12px
+    height: 12px
+    display: inline-block
+    vertical-align: top
+    margin: 5px 5px 10px
 
   figcaption
     margin: -5px 0 5px
