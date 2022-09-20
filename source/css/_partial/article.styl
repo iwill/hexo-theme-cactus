@@ -16,7 +16,7 @@ article
       font-size: .85rem
 
     .author
-      text-transform: uppercase
+      /* text-transform: uppercase */
       letter-spacing: .01em
       font-weight: 700
 
@@ -24,14 +24,26 @@ article
       display: inline
 
   .content
-    h2:before
+    h2 .headerlink:before
       position: absolute
-      top: -4px
       left: -1rem
       color: $color-accent-1
       content: "#"
       font-weight: bold
       font-size: 1.2rem
+    h3, h4, h5, h6
+      .headerlink:before
+        position: absolute
+        left: -0.8rem
+        content: "#"
+        color: $color-link
+    /* h2:hover, h3:hover, h4:hover, h5:hover, h6:hover
+      .headerlink:before
+        color: $color-link
+        text-decoration: underline */
+    h5 .headerlink:before
+    h6 .headerlink:before
+      color: $color-accent-3
 
     img
     video
