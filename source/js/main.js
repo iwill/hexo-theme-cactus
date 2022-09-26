@@ -26,6 +26,19 @@ $(document).ready(function() {
    */
   if ($(".post").length) {
 
+    // ".content a, .content code"
+    $(".content a").each(function(idx, ele) {
+      let $this = $(this);
+      if (!$this.children().length) {
+        let html = $this.html();
+        // "http://www.abc.com:123/page.html?a=1&b=2#abcd+e-f"
+        let wbr = html.replace(/(\w+)/g, "$1<wbr />"); // insert `<wbr />` befor words and after symbols
+        if (wbr != html) {
+          $this.html(wbr);
+        }
+      }
+    });
+
     var menu = $("#menu");
     var nav = $("#menu > #nav");
     var menuIcon = $("#menu-icon, #menu-icon-tablet");
